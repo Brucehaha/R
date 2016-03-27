@@ -1,8 +1,17 @@
-my_matix <- matrix(1:4,2,2)
+source("C:/Users/Bruce/OneDrive/Documents/GitHub/ProgrammingAssignment2/cachematrix.R")
+m <- makeCacheMatrix(matrix(1:9, , 2))
+m$get()
+m$getInverse()
+cacheSolve(m)
+cacheSolve(m)
 
-makeCacheMatrix(my_matix)$get()
 
-makeCacheMatrix(my_matix)$getInverse()
+y <- makeCacheMatrix()
+y$set(matrix(c(2, 2, 1, 4), 2, 2))
+y$get()
+y$getInverse
+x<-cacheSolve(y)
+cacheSolve(y)
+y$getInverse()
 
-
-cacheSolve(makeCacheMatrix(my_matix))
+solve(y$get())
